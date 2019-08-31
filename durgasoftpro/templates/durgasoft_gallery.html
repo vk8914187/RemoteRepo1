@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+
+    <title>Gallery Page</title>
+</head>
+<body>
+{% block content %}
+    <style>
+    body{
+        background-color: green;
+    }
+    </style>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/IMG_20190726_105640.jpg' %}" style="width: 100%; height: 50%;">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/IMG_20190726_105641.jpg' %}" style="width: 100%; height: 50%">
+        </div>
+
+    </div>
+        <div class="row" style="margin-top: 30px">
+
+        <div class="col-md-6">
+            <img src="{% static 'images/Hydrangeas.jpg' %}" style="width: 100%; height: 50%">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/IMG-20190322-WA0004.jpg' %}" style="width: 100%; height: 50%">
+        </div>
+
+    </div>
+    <div class="row" style="margin-top: 30px">
+        <div class="col-md-6">
+            <img src="{% static 'images/44381654_2110855415639395_5967699806154391552_o.jpg' %}" style="width: 100%; height: 50%">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/IMG-20190224-WA0012.jpg' %}" style="width: 100%; height: 50%">
+        </div>
+
+    </div>
+    <div class=" row" style="margin-top: 30px">
+        <div class="col-md-6">
+            <img src="{% static 'images/20643120_1588674334524175_5209822870601882978_o.jpg' %}" style="width: 100%; height: 50%">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/40079641_1358999224233622_5329318944136232960_n.jpg' %}" style="width: 100%; height: 50%">
+        </div>
+
+    </div>
+
+    </div>
+
+{% endblock %}
+
+</body>
+</html>
